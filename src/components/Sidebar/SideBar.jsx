@@ -12,9 +12,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
 const routes = [
   {
-    path: "/",
+    path: "/input",
     name: "Input",
-    icon: <FcMultipleInputs />
+    icon: <FcMultipleInputs />,
   },
   {
     path: "/MacroData",
@@ -35,17 +35,16 @@ const routes = [
     path: "/ecl-summary",
     name: "ECL Summary",
     icon: <AiTwotoneFileExclamation />,
-    
   },
   {
     path: "/riskcapital",
     name: "Risk Capital Assessment",
-    icon: <GiDecapitation />
+    icon: <GiDecapitation />,
   },
   {
     path: "/reporst",
     name: "Reports",
-    icon: <FiClipboard />
+    icon: <FiClipboard />,
   },
 ];
 
@@ -99,8 +98,7 @@ const SideBar = ({ children }) => {
               damping: 14,
             },
           }}
-          className={`sidebar `}
-        >
+          className={`sidebar `}>
           <div className="top_section">
             <AnimatePresence>
               {isOpen && (
@@ -109,8 +107,7 @@ const SideBar = ({ children }) => {
                   initial="hidden"
                   animate="show"
                   exit="hidden"
-                  className="logo"
-                >
+                  className="logo">
                   Grant Thornton
                 </motion.h1>
               )}
@@ -155,8 +152,7 @@ const SideBar = ({ children }) => {
                   to={route.path}
                   key={index}
                   className="link"
-                  activeClassName="active"
-                >
+                  activeClassName="active">
                   <div className="icon">{route.icon}</div>
                   <AnimatePresence>
                     {isOpen && (
@@ -165,8 +161,7 @@ const SideBar = ({ children }) => {
                         initial="hidden"
                         animate="show"
                         exit="hidden"
-                        className="link_text"
-                      >
+                        className="link_text">
                         {route.name}
                       </motion.div>
                     )}

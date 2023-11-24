@@ -1,10 +1,80 @@
-.input_page{
-    height:100vh;
-    weight:100vw;
-    background-color: blue;
+.input_page {
+  height: 100%;
 }
 
-.navbar{
-
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(141, 141, 141);
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 }
 
+.btn {
+  margin-right: 5px;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  margin-top: 10px;
+}
+
+.left_panel {
+  background-color: rgb(201, 201, 201);
+  flex: 1;
+  margin-right: 15px;
+  height: 100%;
+  text-align: center;
+}
+
+.right_panel {
+  background-color: rgb(190, 190, 190);
+  flex: 3;
+  height: 100%;
+  text-align: center;
+}
+
+.panelContainer {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.panel1 {
+  width: 400px;
+  height: 300px;
+  margin-right: 20px;
+  background-color: rgb(102, 101, 101);
+}
+
+.panel2 {
+  width: 400px;
+  height: 300px;
+  margin-right: 20px;
+  background-color: rgb(102, 101, 101);
+}
+
+.function_panel {
+  background-color: rgb(141, 141, 141);
+  height: 130px;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panelBtn {
+  width: 200px;
+  height: 30px;
+  margin: 10px 0;
+}

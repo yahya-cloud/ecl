@@ -15,27 +15,25 @@ import Reports from "./pages/Reports";
 function App() {
   return (
     <Router>
-    <div className='main_page'>
-  
-    <div className='left_panel'>
+      <div className="main_page">
+        <div className="left_panel">
           <SideBar />
-    </div>
+        </div>
 
-    <div className='right_panel'>
-      <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/input" element={<Input />} />
-          <Route path="/macro-data" element={<MacroData />} />
-          <Route path="/LoanCashFlow" element={<LoanCashFlow />} />
-          <Route path="/pd" element={<Pd />} />
-          <Route path="/file-manager" element={<FileManager />} />
-          <Route path="/riskcapital" element={<RiskCapital />} />
-          <Route path="/reports" element={<Reports />} />
+        <div className="right_panel">
+          <Routes>
+            <Route path="/input" element={<Input />} />
+            <Route path="/macro-data" element={<MacroData />} />
+            <Route path="/LoanCashFlow" element={<LoanCashFlow />} />
+            <Route path="/pd" element={<Pd />} />
+            <Route path="/file-manager" element={<FileManager />} />
+            <Route path="/riskcapital" element={<RiskCapital />} />
+            <Route path="/reports" element={<Reports />} />
+            {/* <Route  path="/" element={<Home />} /> */}
 
-          <Route path="*" element={<>Not found</>} />
+            <Route path="*" element={<>Not found</>} />
           </Routes>
-
-      </div>
+        </div>
       </div>
     </Router>
   );
