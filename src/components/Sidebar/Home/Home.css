@@ -1,0 +1,8 @@
+.home{
+    position: relative;
+}
+
+.home_navbar{
+    position: absolute;
+    top: 0; 
+}
