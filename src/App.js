@@ -29,7 +29,7 @@ function App() {
             <Route path="/file-manager" element={<FileManager />} />
             <Route path="/riskcapital" element={<RiskCapital />} />
             <Route path="/reports" element={<Reports />} />
-            {/* <Route  path="/" element={<Home />} /> */}
+            <Route path="/" element={<Home />} />
 
             <Route path="*" element={<>Not found</>} />
           </Routes>

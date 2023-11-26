@@ -1,0 +1,40 @@
+.home {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(183, 191, 255, 0.705);
+  color: #333;
+  text-align: center;
+}
+
+.home_navbar {
+  position: absolute;
+  top: 0;
+}
+
+.logo {
+  margin-top: -150px;
+  height: 300px;
+  margin-bottom: none;
+}
+
+.home h3 {
+  font-weight: 400;
+  margin-top: -100px;
+  margin-right: -50px;
+}
+.home p {
+  margin-right: -50px;
+}
+
+.copyRight {
+  position: absolute;
+  bottom: 0;
+  color: rgba(0, 7, 61, 0.705);
+  left: 50%;
+  transform: translateX(-40%);
+  bottom: 5px;
+}
